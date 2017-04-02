@@ -1,0 +1,43 @@
+.bg{
+	background-color: #9a7eb8;
+}
+input[type="text"],input[type="password"] {
+    color: #fff;
+    text-align: center;
+}
+/*log css*/
+h1.loginh1 {
+    color: #fff;
+}
+.login {
+    text-align: center;
+    padding: 5%;
+}
+button.button.button-clear.button-small.button-positive.loginnotregister {
+    font-size: large;
+    color: antiquewhite;
+}
+/*Reg css*/
+.register {
+    text-align: center;
+    padding: 5%;
+    background-color: #9a7eb8;
+    color: #fff;
+}
+h1.registerh1 {
+    color: #fff;
+}
+label.item.item-input.item-floating-label {
+    border: transparent;
+}
+label.item.item-input.item-select {
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+button.button.button-clear.button-small.button-positive.registeralready {
+    color: antiquewhite;
+    font-size: large;
+}

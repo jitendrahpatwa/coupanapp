@@ -1,0 +1,41 @@
+<ion-view view-title="Add Products">
+  <ion-content class="contentPage">
+    <form>
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Product Type
+        </div>
+        <select ng-model="product.type">
+          <option value="Vehicle" selected>Vehicle</option>
+          <option value="Footwear">Footwear</option>
+          <option value="Cosmetics">Cosmetics</option>
+          <option value="Housing">Housing</option>
+          <option value="Electronics">Electronics</option>            
+          <option value="BabyToys">BabyToys</option>            
+          <option value="Cloths">Cloths</option>            
+        </select>
+      </label><br><br>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Name</span>
+        <input type="text" placeholder="Product Name" ng-model="product.name">
+      </label><br><br>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Product Description</span>
+        <input type="text" placeholder="Product Description" ng-model="product.description">
+      </label><br><br>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Product Image Url</span>
+        <input type="text" placeholder="Product Image Url" ng-model="product.image">
+      </label><br><br>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Amount In Rs</span>
+        <input type="text" placeholder="Amount In Rs" ng-keypress="ValidateAmount($event)" ng-model="product.price">
+      </label><br><br>
+        <center>
+      <button class="button button-royal registerbtn" ng-click="addproduct()">
+        Add Product
+      </button>
+            </center>
+    </form>
+  </ion-content>
+</ion-view>

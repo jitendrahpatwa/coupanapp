@@ -1,0 +1,12 @@
+<ion-view view-title="List Coupons">
+  <ion-content class="contentPage">
+    
+      <div class="list couponslist" ng-repeat="c in coupons">
+	   <a class="item item-icon-left item-icon-right">
+	    <i class="icon ion-chatbubble-working"></i>
+	    {{c.name}}&nbsp;<small ng-click="viewCoupon('{{c.id}}','{{c.couponcode}}','{{c.name}}','{{c.reduction}}','{{c.coupontype}}')">CODE</small><br><small>Created with reduction Rs:{{c.reduction}}/- <br>for {{c.coupontype}}</small>
+	  </a>
+	</div>
+      
+  </ion-content>
+</ion-view>

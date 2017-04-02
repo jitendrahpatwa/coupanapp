@@ -1,0 +1,33 @@
+<ion-view view-title="Admin Add Coupons">
+  <ion-content class="contentPage" style="text-align:center">
+    <form>
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Coupon Type
+        </div>
+        <select ng-model="coupon.type">
+          <option value="Vehicle" selected>Vehicle</option>
+          <option value="Footwear">Footwear</option>
+          <option value="Cosmetics">Cosmetics</option>
+          <option value="Housing">Housing</option>
+          <option value="Electronics">Electronics</option>            
+          <option value="BabyToys">BabyToys</option>            
+          <option value="Cloths">Cloths</option>            
+        </select>
+      </label><br><br>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Name</span>
+        <input type="text" placeholder="Coupon Name" ng-model="coupon.name">
+      </label><br><br>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Reduction Amount In Rs</span>
+        <input type="text" placeholder="Reduction Amount In Rs" ng-keypress="ValidateAmount($event)" ng-model="coupon.reduction">
+      </label><br><br>
+      <button class="button button-royal registerbtn" ng-click="addcoupon()">
+        Add Coupon
+      </button>
+    </form>
+      
+      
+  </ion-content>
+</ion-view>

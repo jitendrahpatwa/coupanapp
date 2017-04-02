@@ -1,0 +1,28 @@
+<ion-view view-title="My Product List">
+  <ion-content class="contentPage">
+    <div class="card productcard" ng-repeat="l in allproducts">
+	  <div class="item item-divider">
+	    {{l.name}}
+	  </div>
+	  <div class="item item-text-wrap">
+	  	<div class="row">
+	  		<div class="col">
+	    		<img src="{{l.image}}" width="100" height="100">	
+	  		</div>
+	  		<div class="col">
+	  			{{l.description}}
+	  		</div>
+	  	</div>
+        <div class="row">
+            <div class="col">
+                Buyed with coupon {{l.couponcode}} <br>(Product price={{l.pricevalue}}<br>& reduced amount -{{l.couponvalue}})<br>Actual Amount
+	  			Rs.: {{l.totalvalue}} /-
+            </div>
+          </div>
+	  </div>
+	  <div class="item item-divider">
+          Buyed on {{l.updated}}
+	  </div>
+	</div>
+  </ion-content>
+</ion-view>

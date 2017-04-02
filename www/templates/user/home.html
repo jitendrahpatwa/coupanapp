@@ -1,0 +1,27 @@
+<ion-view view-title="Products">
+  <ion-content class="contentPage">
+       
+    <div class="card productcard" ng-repeat="l in productlist">
+	  <div class="item item-divider">
+	    {{l.name}}
+	  </div>
+	  <div class="item item-text-wrap">
+	  	<div class="row">
+	  		<div class="col">
+	    		<img src="{{l.image}}" width="100" height="100">	
+	  		</div>
+	  		<div class="col">
+	  			{{l.desc}}<br><br>
+	  			Rs.: {{l.price}} /-
+	  		</div>
+	  	</div>
+	  </div>
+	  <div class="item item-divider">
+	    <button class="button button-full button-small button-positive" ng-click="getthat('{{l.id}}','{{l.type}}','{{l.name}}','{{l.price}}')">
+		  Get that!
+		</button>
+	  </div>
+	</div>
+
+  </ion-content>
+</ion-view>

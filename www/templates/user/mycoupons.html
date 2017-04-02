@@ -1,0 +1,14 @@
+<ion-view view-title="My All Coupons">
+  <ion-content class="contentPage">
+    
+    <div class="list couponslist" ng-repeat="c in mycoupons">
+	   <a class="item item-icon-left item-icon-right">
+	    <i class="icon ion-chatbubble-working"></i>
+	    {{c.name}}&nbsp;<small><i ng-if="c.isbuyed == 'No'" style="color:red">Not used yet</i><i ng-if="c.isbuyed == 'Yes'" style="color:green">Used</i></small><br><small>I have Rs:{{c.cprice}}/- coupon with<br> coupon code <b>{{c.couponcode}}</b></small>
+	    <i class="icon ion-pound"></i>
+	  </a>
+	</div>
+	
+
+  </ion-content>
+</ion-view>
